@@ -1,0 +1,33 @@
+.owl-carousel .item{
+ /* border: 1px solid black; */
+ font-size: 24px;
+ text-align: center;
+ margin-top: 20px;;
+}
+
+.owl-next{
+ float:right;
+}
+.owl-prev{
+ float:left;
+}
+.owl-prev span{
+ font-size: 24px;
+ font-weight: bold;
+}
+.owl-next span{
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.product-box {
+    display: block;
+}
+
+.product-box img {
+    aspect-ratio: 1;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}

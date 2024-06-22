@@ -1,0 +1,59 @@
+{% extends 'shopping/base.html' %}
+{% load static %}
+{% block title %}Address{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+ <h3>Welcome {{request.user}}</h3>
+  <div class="col-sm-2 border-end">
+   <ul class="list-unstyled">
+    <li class="d-grid"><a href="{% url 'profile' %}" class="btn">Profile</a></li>
+    <li class="d-grid"><a href="{% url 'address' %}" class="btn btn-primary">Address</a></li>
+    <li class="d-grid"><a href="{% url 'orders' %}" class="btn">Orders</a></li>
+   </ul>
+  </div>
+  <div class="col-sm-9 offset-sm-1">
+   <div class="row">
+    {% if messages %}
+    {% for message in messages %}
+      {%if message.tags == "warning" %}
+      <div class="alert alert-danger mt-3">{{message}}</div>
+      {%elif message.tags == "success" %}
+      <div class="alert alert-success mt-3">{{message}}</div>
+      {%endif%}
+    {% endfor %}
+    {%endif%}
+    {% for address in address_data %}
+    <div class="col-sm-6">
+     <div class="card mb-4">
+      <div class="card-body">
+       <div class="card-buttons">
+        <a href="/profile/{{address.id}}" class="card-edit btn btn-primary mr-2"><i class="fas fa-pencil-alt"></i></a>
+        <form action="" method="post" class="d-inline-block">
+         {%csrf_token%}
+         <input type="hidden" name="add_id" value="{{address.id}}">
+         <button class="card-edit btn btn-danger"><i class="fas fa-trash"></i></button>
+        </form>
+       </div>
+       <h3>Address {{forloop.counter}}</h3>
+       <p>Name: {{address.name}}</p>
+       <p>Phone No.: {{address.phone}}</p>
+       <p>Locality: {{address.locality}}</p>
+       <p>City: {{address.city}}</p>
+       <p>Zipcode: {{address.zipcode}}</p>
+       <p>State: {{address.state | title}}</p>
+      </div>
+     </div>
+    </div>
+    {%empty%}
+    <div class="text-center col-12 mb-5">
+      <h1 class="mb-3">Address is empty.</h1>
+      <p>Please at least an address for make an order.</p>
+     <a href="{%url 'profile'%}" class="btn btn-primary">Add Address</a>
+    </div>
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
