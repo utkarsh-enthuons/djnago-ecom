@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3aa222f4-84c1-43eb-b335-7c94f35458d4" name="Changes" comment="The project has been completed.">
-      <change afterPath="$PROJECT_DIR$/.idea/Ecom.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/templates/shopping/logout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/templates/shopping/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/templates/shopping/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/templates/shopping/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/templates/shopping/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/shopping/templates/shopping/passwordchangedone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/address-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/addtocart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/change-password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/email-sent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/include/admin-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/ver-email-sent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jopajiproject/jopaji/templates/verify-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
